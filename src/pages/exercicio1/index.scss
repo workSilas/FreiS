@@ -1,8 +1,8 @@
-body{
-    background-color:  #F5F6FA;
+body {
+    background-color: #F5F6FA;
 }
 
-.pagina-ex1 {  
+.pagina-ex1 {
 
     header {
         display: flex;
@@ -13,14 +13,14 @@ body{
         background-color: #6278F7;
     }
 
-    header div{
+    header div {
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 20px;
     }
 
-    header h1{
+    header h1 {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 1rem;
     }
@@ -55,9 +55,15 @@ body{
         gap: 40px;
     }
 
+    .line {
+        width: 1280px;
+        height: 4px;
+        background-color: #FFCE37;
+    }
+
     .title {
         display: flex;
-        align-items: center;
+        text-align: center;
         gap: 20px;
     }
 
@@ -73,6 +79,7 @@ body{
         display: flex;
         align-items: center;
         text-align: center;
+        justify-content: center;
         box-shadow: #d1d1d1 0px 0px 3px;
     }
 
