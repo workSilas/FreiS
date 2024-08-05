@@ -4,13 +4,19 @@ import { useState } from 'react'
 
 export default function Exercício1() {
 
-    const [Valores, setValores] = useState(0)
+    const [Valor, setValores] = useState(0)
     const [Desconto, setDescontos] = useState(0)
     const [Click, setClick] = useState(0)
 
     function clicking() {
-        let equa = Valores * Desconto / 100
-        setClick(equa)
+        let equa =0
+        if (Desconto == 0) {
+            equa = Valor
+        }
+        else {
+            equa = Valor * Desconto / 100
+        }
+        setClick(Number(equa))
         return setClick
     }
 
@@ -39,7 +45,7 @@ export default function Exercício1() {
                     <div className='square'>
                         <div className='exercise'>
                             <h2>Informe o valor do pedido</h2>
-                            <input type="text" value={Valores} onChange={e => setValores(e.target.value)} />
+                            <input type="text" value={Valor} onChange={e => setValores(e.target.value)} />
                             <h2>informe o valor do cupom</h2>
                             <input type="text" value={Desconto} onChange={e => setDescontos(e.target.value)} />
                         </div>
