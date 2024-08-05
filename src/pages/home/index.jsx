@@ -39,6 +39,20 @@ export default function Home() {
                         <h3>Valor total por quantidade</h3>
                         <Link to='/Exercicio3'>Exercício 03</Link>
                     </div>
+                    <div className='square'>
+                        <div className='circle' id='vermelho'>
+
+                        </div>
+                        <h3>Tempo por Páginas</h3>
+                        <Link to='/Exercicio4'>Exercício 04</Link>
+                    </div>
+                    <div className='square'>
+                        <div className='circle' id='amarelo'>
+
+                        </div>
+                        <h3>Passou ou Não</h3>
+                        <Link to='/Exercicio5'>Exercício 05</Link>
+                    </div>
                 </div>
             </main>
         </div>

@@ -9,14 +9,17 @@ export default function Exercício1() {
     const [Click, setClick] = useState(0)
 
     function clicking() {
-        let equa =0
+        let equa = 0
+        let res = 0
         if (Desconto == 0) {
             equa = Valor
+            res = equa
         }
         else {
             equa = Valor * Desconto / 100
+            res = Valor - equa
         }
-        setClick(Number(equa))
+        setClick(Number(res))
         return setClick
     }
 
