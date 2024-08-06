@@ -8,7 +8,7 @@ export default function Exercício5() {
     const [nota2, setNota2 ]= useState(0)
     const [nota3, setNota3 ]= useState(0)
     const [Click, setClick] = useState(0)
-    const [Click2, setClick2] = useState('')
+    const [Click2, setClick2] = useState('indefinido')
 
     function clicking() {
         let media = (Number(nota1) + Number(nota2) + Number(nota3)) / 3
@@ -68,8 +68,10 @@ export default function Exercício5() {
                         </div>
                         <button onClick={clicking} >Executar</button>
                     </div>
+                    <div className='result'>
                     <p>A média final é de {Click.toFixed(1)}.</p>
                     <p>A situação é {Click2}.</p>
+                    </div>
                 </div>
             </main>
         </div>

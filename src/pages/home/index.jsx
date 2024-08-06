@@ -56,14 +56,43 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
+                <hr />
                 <div className='fileiras'>
-                        
+                    <div className="corner">
+                        <div className='square'>
+                            <div className='circle' id='rosa'>
+
+                            </div>
+                            <h3>Salário</h3>
+                            <Link to='/Exercicio6'>Exercício 06</Link>
+                        </div>
+                        <div className='square'>
+                            <div className='circle' id='marrom'>
+
+                            </div>
+                            <h3>Cores</h3>
+                            <Link to='/Exercicio7'>Exercício 07</Link>
+                        </div>
+                        <div className='square'>
+                            <div className='circle' id='preto'>
+
+                            </div>
+                            <h3>Cores</h3>
+                            <Link to='/Exercicio8'>Exercício 08</Link>
+                        </div>
+                    </div>
                 </div>
+                <hr />
                 <div className='fileiras'>
-                        
+                    <div className="corner">
+
+                    </div>
                 </div>
+                <hr />
                 <div className='fileiras'>
-                        
+                    <div className="corner">
+
+                    </div>
                 </div>
             </main>
         </div>

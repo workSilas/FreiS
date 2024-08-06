@@ -2,21 +2,22 @@ import './index.scss';
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
-export default function Exercício4() {
+export default function Exercício6() {
 
-    const [Nome, setNome ]= useState("Nome do livro")
-    const [paginas, setPaginas] = useState(0)
-    const [tempo, setTempo] = useState(0)
+    const [salario, setSalario ]= useState(0)
+    const [bonus, setBonus ]= useState(0)
+    const [desconto, setDesconto ]= useState(0)
     const [Click, setClick] = useState(0)
 
     function clicking() {
-        let total = ((tempo / 60) * paginas) / 60
-        setClick(total)
+        let media = (((Number(salario) * Number(bonus)) / 100) + Number(salario)) - Number(desconto)
+        setClick(Number(media))
         return setClick
     }
 
+
     return (
-        <div className='pagina-ex4'>
+        <div className='pagina-ex6'>
             <header>
                 <div>
                     <img src="/assets/images/Frei-Logo.png" alt="" />
@@ -31,31 +32,33 @@ export default function Exercício4() {
             <main>
                 <div className='title'>
                     <Link to='/Home'><img src="/assets/images/seta.png" /></Link>
-                    <h2>Exercício 04 - Tempo por Páginas</h2>
+                    <h2>Exercício 06 - Salário</h2>
                 </div>
                 <div className='sep'>
                     <div className='line'></div>
                     <div className='enunciado'>
-                        <p>Implementar um programa em Javascript que <b>calcule</b> o tempo que um livro será lido por uma pessoa a partir do nome do livro, do total de páginas e do t empo em segundos de leitura por página.</p>
+                        <p>Implementar um programa em Javascript para <b>calcular o salário líquido </b>de um funcionário, a partir de seu salário base, bônus mensal em porcentagem e do total de descontos em reais.</p>
                     </div>
                     <div className='square'>
                         <div className='exercise'>
                             <div className='divisao'>
-                                <h2>Nome do livro</h2>
-                                <input type="text" value={Nome} onChange={e => setNome(e.target.value)} />
+                                <h2>Salário</h2>
+                                <input type="text" value={salario} onChange={e => setSalario(e.target.value)} />
                             </div>
                             <div className='divisao'>
-                                <h2>Total de Páginas</h2>
-                                <input type="text" value={paginas} onChange={e => setPaginas(e.target.value)} />
+                                <h2>Bônus</h2>
+                                <input type="text" value={bonus} onChange={e => setBonus(e.target.value)} />
                             </div>
                             <div className='divisao'>
-                                <h2>Tempo em segundos</h2>
-                                <input type="text" value={tempo} onChange={e => setTempo(e.target.value)} />
+                                <h2>Descontos</h2>
+                                <input type="text" value={desconto} onChange={e => setDesconto(e.target.value)} />
                             </div>
                         </div>
                         <button onClick={clicking} >Executar</button>
                     </div>
-                    <p>Você lerá {Nome} em {Click.toFixed(2)} horas</p>
+                    <div className='result'>
+                    <p>O salário líquido total é de R${Click.toFixed(2)}.</p>
+                    </div>
                 </div>
             </main>
         </div>
