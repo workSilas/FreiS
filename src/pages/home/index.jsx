@@ -17,42 +17,53 @@ export default function Home() {
             </header>
             <main>
                 <h2>Escolha um treino...</h2>
-                <div className='corner'>
-                    <div className='square'>
-                        <div className='circle' id='laranja'>
+                <div className='fileiras'>
+                    <div className='corner'>
+                        <div className='square'>
+                            <div className='circle' id='laranja'>
 
+                            </div>
+                            <h3>Cupom de desconto</h3>
+                            <Link to='/Exercicio1'>Exercício 01</Link>
                         </div>
-                        <h3>Cupom de desconto</h3>
-                        <Link to='/Exercicio1'>Exercício 01</Link>
-                    </div>
-                    <div className='square'>
-                        <div className='circle' id='verde'>
+                        <div className='square'>
+                            <div className='circle' id='verde'>
 
+                            </div>
+                            <h3>Converter Kg/gramas</h3>
+                            <Link to='/Exercicio2'>Exercício 02</Link>
                         </div>
-                        <h3>Converter Kg/gramas</h3>
-                        <Link to='/Exercicio2'>Exercício 02</Link>
-                    </div>
-                    <div className='square'>
-                        <div className='circle' id='azul'>
+                        <div className='square'>
+                            <div className='circle' id='azul'>
 
+                            </div>
+                            <h3>Valor total por quantidade</h3>
+                            <Link to='/Exercicio3'>Exercício 03</Link>
                         </div>
-                        <h3>Valor total por quantidade</h3>
-                        <Link to='/Exercicio3'>Exercício 03</Link>
-                    </div>
-                    <div className='square'>
-                        <div className='circle' id='vermelho'>
+                        <div className='square'>
+                            <div className='circle' id='vermelho'>
 
+                            </div>
+                            <h3>Tempo por Páginas</h3>
+                            <Link to='/Exercicio4'>Exercício 04</Link>
                         </div>
-                        <h3>Tempo por Páginas</h3>
-                        <Link to='/Exercicio4'>Exercício 04</Link>
-                    </div>
-                    <div className='square'>
-                        <div className='circle' id='amarelo'>
+                        <div className='square'>
+                            <div className='circle' id='amarelo'>
 
+                            </div>
+                            <h3>Passou ou Não</h3>
+                            <Link to='/Exercicio5'>Exercício 05</Link>
                         </div>
-                        <h3>Passou ou Não</h3>
-                        <Link to='/Exercicio5'>Exercício 05</Link>
                     </div>
+                </div>
+                <div className='fileiras'>
+                        
+                </div>
+                <div className='fileiras'>
+                        
+                </div>
+                <div className='fileiras'>
+                        
                 </div>
             </main>
         </div>

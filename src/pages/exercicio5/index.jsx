@@ -4,16 +4,29 @@ import { useState } from 'react'
 
 export default function Exercício5() {
 
-    const [Nome, setNome ]= useState("Nome do livro")
-    const [paginas, setPaginas] = useState(0)
-    const [tempo, setTempo] = useState(0)
+    const [nota1, setNota1 ]= useState(0)
+    const [nota2, setNota2 ]= useState(0)
+    const [nota3, setNota3 ]= useState(0)
     const [Click, setClick] = useState(0)
+    const [Click2, setClick2] = useState('')
 
     function clicking() {
-        let soma = ((tempo / 60) * paginas) / 60
-        setClick(soma)
-        return setClick
+        let media = (Number(nota1) + Number(nota2) + Number(nota3)) / 3
+        setClick(Number(media))
+        let res = ''
+        if(Click >= 6 && Click <= 10){
+            res = 'Aprovado'
+        }
+        else if(Click < 6 && Click >= 0){
+            res = 'Repovado'
+        }
+        else{
+            res = 'Inválido'
+        }
+        setClick2(res)
+        return setClick, setClick2
     }
+
 
     return (
         <div className='pagina-ex5'>
@@ -36,26 +49,27 @@ export default function Exercício5() {
                 <div className='sep'>
                     <div className='line'></div>
                     <div className='enunciado'>
-                        <p>Implementar um programa em Javascript que <b>calcule</b> o tempo que um livro será lido por uma pessoa a partir do nome do livro, do total de páginas e do t empo em segundos de leitura por página.</p>
+                        <p>Implementar um programa em Javascript para <b>verificar </b>se um aluno passou ou não, baseado em 3 notas, considerando que a média mínima para passar é 6.</p>
                     </div>
                     <div className='square'>
                         <div className='exercise'>
                             <div className='divisao'>
-                                <h2>Nome do livro</h2>
-                                <input type="text" value={Nome} onChange={e => setNome(e.target.value)} />
+                                <h2>Primeira nota</h2>
+                                <input type="text" value={nota1} onChange={e => setNota1(e.target.value)} />
                             </div>
                             <div className='divisao'>
-                                <h2>Total de Páginas</h2>
-                                <input type="text" value={paginas} onChange={e => setPaginas(e.target.value)} />
+                                <h2>Segunda nota</h2>
+                                <input type="text" value={nota2} onChange={e => setNota2(e.target.value)} />
                             </div>
                             <div className='divisao'>
-                                <h2>Tempo em segundos</h2>
-                                <input type="text" value={tempo} onChange={e => setTempo(e.target.value)} />
+                                <h2>Terceira nota</h2>
+                                <input type="text" value={nota3} onChange={e => setNota3(e.target.value)} />
                             </div>
                         </div>
                         <button onClick={clicking} >Executar</button>
                     </div>
-                    <p>Você lerá {Nome} em {Click.toFixed(2)} horas</p>
+                    <p>A média final é de {Click.toFixed(1)}.</p>
+                    <p>A situação é {Click2}.</p>
                 </div>
             </main>
         </div>
