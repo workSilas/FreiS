@@ -133,6 +133,11 @@ body {
         align-items: center;
     }
 
+    button:hover {
+        background-color: #8295ff;
+        transition: 0.5s;
+    }
+
     .result {
         display: flex;
         gap: 20px;

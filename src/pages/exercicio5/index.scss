@@ -110,7 +110,7 @@ body {
         text-align: center;
     }
 
-    .divisao h2{
+    .divisao h2 {
         margin-bottom: 10px;
     }
 
@@ -136,5 +136,10 @@ body {
     .result {
         display: flex;
         gap: 20px;
+    }
+
+    button:hover {
+        background-color: #8295ff;
+        transition: 0.5s;
     }
 }

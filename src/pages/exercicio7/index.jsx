@@ -9,9 +9,9 @@ export default function Exercício7() {
     const [Click, setClick] = useState('...')
 
     function clicking() {
-        let a = 'true'
-        let b = 'true'
-        let c = 'true'
+        let a = ''
+        let b = ''
+        let c = ''
         if(cor1 == 'azul' || cor1 =='amarelo' || cor1 == 'vermelho'){
             a = 'true'
         }
@@ -61,9 +61,9 @@ export default function Exercício7() {
                     <div className='square'>
                         <div className='exercise'>
                             <h2>Primeira cor</h2>
-                            <input type="text" value={cor1.toLowerCase()} onChange={e => setCor1(e.target.value)} />
+                            <input type="text" value={cor1} onChange={e => setCor1(e.target.value)} />
                             <h2>Segunda cor</h2>
-                            <input type="text" value={cor2.toLowerCase()} onChange={e => setCor2(e.target.value)} />
+                            <input type="text" value={cor2} onChange={e => setCor2(e.target.value)} />
                         </div>
                         <button onClick={clicking} >Executar</button>
                     </div>

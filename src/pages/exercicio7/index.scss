@@ -124,4 +124,9 @@ body {
         height: 50px;
         align-items: center;
     }
+    
+    button:hover {
+        background-color: #8295ff;
+        transition: 0.5s;
+    }
 }

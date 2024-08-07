@@ -8,6 +8,7 @@ import Exercício5 from './pages/exercicio5'
 import Exercício6 from './pages/exercicio6'
 import Exercício7 from './pages/exercicio7'
 import Exercício8 from './pages/exercicio8'
+import Exercício9 from './pages/exercicio9'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 export default function Estrutura() {
@@ -24,6 +25,7 @@ export default function Estrutura() {
             <Route path='/Exercicio6' element={<Exercício6/>}/>
             <Route path='/Exercicio7' element={<Exercício7/>}/>
             <Route path='/Exercicio8' element={<Exercício8/>}/>
+            <Route path='/Exercicio9' element={<Exercício9/>}/>
         </Routes> 
     </BrowserRouter>
     )

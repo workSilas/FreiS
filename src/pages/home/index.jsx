@@ -77,8 +77,15 @@ export default function Home() {
                             <div className='circle' id='preto'>
 
                             </div>
-                            <h3>Cores</h3>
+                            <h3>Temperatura</h3>
                             <Link to='/Exercicio8'>Exercício 08</Link>
+                        </div>
+                        <div className='square'>
+                            <div className='circle' id='roxo'>
+
+                            </div>
+                            <h3>Sorveteria</h3>
+                            <Link to='/Exercicio9'>Exercício 09</Link>
                         </div>
                     </div>
                 </div>

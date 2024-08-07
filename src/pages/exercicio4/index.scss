@@ -110,7 +110,7 @@ body {
         text-align: center;
     }
 
-    .divisao h2{
+    .divisao h2 {
         margin-bottom: 10px;
     }
 
@@ -131,5 +131,10 @@ body {
         width: 216px;
         height: 50px;
         align-items: center;
+    }
+
+    button:hover {
+        background-color: #8295ff;
+        transition: 0.5s;
     }
 }
