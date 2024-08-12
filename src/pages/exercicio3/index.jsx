@@ -31,7 +31,7 @@ export default function Exercício3() {
             <main>
                 <div className='title'>
                     <Link to='/Home'><img src="/assets/images/seta.png" /></Link>
-                    <h2>Exercício 03 - Valor total por quantidade</h2>
+                    <h2>Exercício 11 - Valor total por quantidade</h2>
                 </div>
                 <div className='sep'>
                     <div className='line'></div>

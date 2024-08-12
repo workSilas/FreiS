@@ -8,28 +8,27 @@ export default function Exercício10() {
     const [peso, setPeso] = useState(0)
     const [Click, setClick] = useState(0)
     const [array, setArray] = useState([])
-    const [Lixeira, setLixeira] = useState()
 
     function clicking() {
         let mensagem = ''
         let imc = peso / (altura * altura)
         if (imc >= 40) {
-            mensagem = `Peso: ${peso}  |Altura: ${altura} |Situação: Obseidade Grau III`
+            mensagem = `Peso: ${peso}  | Altura: ${altura} | Situação: Obseidade Grau III`
         }
         else if (imc >= 35 && imc <= 39.9) {
-            mensagem = `Peso: ${peso}  |Altura: ${altura} |Situação: Obseidade Grau II`
+            mensagem = `Peso: ${peso}  | Altura: ${altura} | Situação: Obseidade Grau II`
         }
         else if (imc >= 30 && imc <= 34.9) {
-            mensagem = `Peso: ${peso}  |Altura: ${altura} |Situação: Obesidade Grau I`
+            mensagem = `Peso: ${peso}  | Altura: ${altura} | Situação: Obesidade Grau I`
         }
         else if (imc >= 25 && imc <= 29.9) {
-            mensagem = `Peso: ${peso}  |Altura: ${altura} |Situação: Sobrepeso`
+            mensagem = `Peso: ${peso}  | Altura: ${altura} | Situação: Sobrepeso`
         }
         else if (imc >= 18.5 && imc <= 24.9) {
-            mensagem = `Peso: ${peso}  |Altura: ${altura} |Situação: Peso Normal`
+            mensagem = `Peso: ${peso}  | Altura: ${altura} | Situação: Peso Normal`
         }
         else if (imc < 18.5) {
-            mensagem = `Peso: ${peso}  |Altura: ${altura} |Situação: Abaixo do Peso`
+            mensagem = `Peso: ${peso}  | Altura: ${altura} | Situação: Abaixo do Peso`
         }
         else {
             mensagem = 'Inválido'
@@ -43,7 +42,7 @@ export default function Exercício10() {
 
     function apagar(pos) {
         array.splice(pos, 1)
-        setArray([...array]) 
+        setArray([...array])
     }
 
     return (
@@ -80,17 +79,16 @@ export default function Exercício10() {
                         </div>
                         <div className='historico'>
                             <ul>
-                                {array.map((item, pos) => 
-                                    <li key={pos}>
+                                {array.map(item =>
+                                    <li>
                                         {item}
-                                        <img onClick={() => apagar(pos)} className='lixeira' src="/assets/images/lixeira.webp"  />
                                     </li>
                                 )}
                             </ul>
                         </div>
                     </div>
                 </div>
-            </main> 
+            </main>
         </div>
     )
 }

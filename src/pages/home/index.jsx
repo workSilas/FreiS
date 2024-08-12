@@ -99,7 +99,13 @@ export default function Home() {
                 <hr />
                 <div className='fileiras'>
                     <div className="corner">
+                    <div className='square'>
+                            <div className='circle' id='cinza'>
 
+                            </div>
+                            <h3>Tabuada</h3>
+                            <Link to='/Exercicio11'>Exercício 11</Link>
+                        </div>
                     </div>
                 </div>
                 <hr />

@@ -2,7 +2,7 @@ body {
     background-color: #F5F6FA;
 }
 
-.pagina-ex10 {
+.pagina-ex11 {
 
     header {
         display: flex;
@@ -58,7 +58,7 @@ body {
     .line {
         width: 1280px;
         height: 4px;
-        background-color: #fff;
+        background-color: #a8a8a8;
     }
 
     .title {
@@ -88,7 +88,7 @@ body {
         border-radius: 12px;
         box-shadow: #d1d1d1 0px 0px 3px;
         width: 476px;
-        height: 295px;
+        height: 187px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -104,15 +104,6 @@ body {
         display: flex;
         flex-direction: column;
         gap: 20px;
-    }
-
-    .divisao {
-        display: flex;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-        gap: 40px;
     }
 
     input {
@@ -134,34 +125,8 @@ body {
         align-items: center;
     }
 
-    ul {
-        display: inline;
-        flex-direction: row;
-    }
-
-    li {
-        margin: 20px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 0px 20px;
-        text-align: center;
-        align-items: center;
-        width: 703px;
-        height: 54px;
-        background-color: #fff;
-        border-radius: 12px;
-    }
-
     button:hover {
         background-color: #8295ff;
         transition: 0.5s;
-    }
-
-
-    .lixeira {
-        background-color: #6278F7;
-        padding: 5px;
-        border-radius: 12px;
     }
 }
