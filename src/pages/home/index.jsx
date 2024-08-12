@@ -87,6 +87,13 @@ export default function Home() {
                             <h3>Sorveteria</h3>
                             <Link to='/Exercicio9'>Exercício 09</Link>
                         </div>
+                        <div className='square'>
+                            <div className='circle' id='branco'>
+
+                            </div>
+                            <h3>IMC</h3>
+                            <Link to='/Exercicio10'>Exercício 10</Link>
+                        </div>
                     </div>
                 </div>
                 <hr />

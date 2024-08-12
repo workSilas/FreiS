@@ -17,11 +17,11 @@ export default function Exercício9() {
         }
         else if(kg >= 1000){
             equa =  (kg / 100) * 3
-            setClick(equa)
+            setClick(equa.toFixed(2))
         }
         else if(kg < 1000){
             equa =  (kg / 100) * 3.50
-            setClick(equa)
+            setClick(equa.toFixed(2))
         }
         return setClick
     }
