@@ -15,9 +15,9 @@ export default function Exercício2() {
         for (let cont = 0; cont <= 10; cont++) {
             mult = numero * cont
             mensagem = `${numero} x ${cont} = ${mult}`
-            setArray([...array, mensagem])
+            array.push(mensagem)
         }
-        setClick()
+        setClick(array)
         return setClick
     }
 
@@ -44,6 +44,7 @@ export default function Exercício2() {
                     <div className='enunciado'>
                         <p>Implementar um programa em Javascript que <b>escreva no terminal</b> a tabuada de um número informado pelo usuário. A mensagem deve estaar no formato "A x B = X".</p>
                     </div>
+                    <div className='divisao'>
                     <div className='square'>
                         <div className='exercise'>
                             <h2>Número</h2>
@@ -51,13 +52,16 @@ export default function Exercício2() {
                         </div>
                         <button onClick={clicking} >Executar</button>
                     </div>
-                    <ul>
-                        {array.map((item, pos) =>
-                            <li key={pos}>
-                                {item}
-                            </li>
-                        )}
-                    </ul>
+                    <div className='tabuada'>
+                        <ul>
+                            {array.map((item, pos) =>
+                                <li key={pos}>
+                                    {item}
+                                </li>
+                            )}
+                        </ul>
+                    </div>
+                    </div>
                 </div>
             </main>
         </div>
