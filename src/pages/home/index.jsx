@@ -1,3 +1,4 @@
+import Exercício1 from '../exercicio1';
 import './index.scss';
 import { Link } from 'react-router-dom'
 
@@ -99,14 +100,24 @@ export default function Home() {
                 <hr />
                 <div className='fileiras'>
                     <div className="corner">
-                    <div className='square'>
+                        <div className='square'>
                             <div className='circle' id='cinza'>
 
                             </div>
                             <h3>Tabuada</h3>
                             <Link to='/Exercicio11'>Exercício 11</Link>
                         </div>
+                        <div className="corner">
+                        <div className='square'>
+                            <div className='circle' id='vermelho'>
+
+                            </div>
+                            <h3>Comparador de pessoas</h3>
+                            <Link to='/Exercicio12'>Exercício 12</Link>
+                        </div>
                     </div>
+                    </div>
+
                 </div>
                 <hr />
                 <div className='fileiras'>

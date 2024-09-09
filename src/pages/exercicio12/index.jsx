@@ -3,9 +3,11 @@ import './index.scss';
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
-export default function Exercício11() {
+export default function Exercício12() {
 
-    const [numero, setNumero] = useState(0)
+    const [nome, setNome] = useState(0)
+    const [idade, setIdade] = useState(0)
+    const [sexo, setSexo] = useState(0)
     const [Click, setClick] = useState(0)
     const [array, setArray] = useState([])
 
@@ -22,7 +24,7 @@ export default function Exercício11() {
     }
 
     return (
-        <div className='pagina-ex11'>
+        <div className='pagina-ex12'>
             <header>
                 <div>
                     <img src="/assets/images/Frei-Logo.png" alt="" />
@@ -37,18 +39,22 @@ export default function Exercício11() {
             <main>
                 <div className='title'>
                     <Link to='/Home'><img src="/assets/images/seta.png" /></Link>
-                    <h2>Exercício 11 - Tabuada</h2>
+                    <h2>Exercício 12 - Comparador de pessoas</h2>
                 </div>
                 <div className='sep'>
                     <div className='line'></div>
                     <div className='enunciado'>
-                        <p>Implementar um programa em Javascript que <b>escreva no terminal</b> a tabuada de um número informado pelo usuário. A mensagem deve estaar no formato "A x B = X".</p>
+                        <p>Implemente um programa em Javascript que leia <b>o nome, a idade, e o sexo de várias pessoas.</b></p>
                     </div>
                     <div className='divisao'>
                     <div className='square'>
                         <div className='exercise'>
-                            <h2>Número</h2>
-                            <input type="text" value={numero} onChange={e => setNumero(e.target.value)} />
+                            <h2>Nome</h2>
+                            <input type="text" value={nome} onChange={e => setNome(e.target.value)} />
+                            <h2>Idade</h2>
+                            <input type="text" value={idade} onChange={e => setIdade(e.target.value)} />
+                            <h2>Sexo</h2>
+                            
                         </div>
                         <button onClick={clicking} >Executar</button>
                     </div>
