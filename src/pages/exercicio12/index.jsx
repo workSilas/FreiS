@@ -2,6 +2,7 @@ import { click } from '@testing-library/user-event/dist/click';
 import './index.scss';
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
+import Nav from '../../components/navegacao';
 
 export default function Exercício12() {
 
@@ -12,30 +13,13 @@ export default function Exercício12() {
     const [array, setArray] = useState([])
 
     function clicking() {
-        let mensagem = ''
-        let mult = 0
-        for (let cont = 0; cont <= 10; cont++) {
-            mult = numero * cont
-            mensagem = `${numero} x ${cont} = ${mult}`
-            array.push(mensagem)
-        }
-        setClick(array)
+
         return setClick
     }
 
     return (
         <div className='pagina-ex12'>
-            <header>
-                <div>
-                    <img src="/assets/images/Frei-Logo.png" alt="" />
-                    <h1>React FreiS</h1>
-                </div>
-
-                <div>
-                    <Link to='/Home'>Inicio</Link>
-                    <Link to='/Sobre'>Sobre</Link>
-                </div>
-            </header>
+            <Nav/>
             <main>
                 <div className='title'>
                     <Link to='/Home'><img src="/assets/images/seta.png" /></Link>
@@ -57,15 +41,6 @@ export default function Exercício12() {
                             
                         </div>
                         <button onClick={clicking} >Executar</button>
-                    </div>
-                    <div className='tabuada'>
-                        <ul>
-                            {array.map((item, pos) =>
-                                <li key={pos}>
-                                    {item}
-                                </li>
-                            )}
-                        </ul>
                     </div>
                     </div>
                 </div>

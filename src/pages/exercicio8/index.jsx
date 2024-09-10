@@ -2,6 +2,7 @@ import { click } from '@testing-library/user-event/dist/click';
 import './index.scss';
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
+import Nav from '../../components/navegacao';
 
 export default function Exercício8() {
 
@@ -34,17 +35,7 @@ export default function Exercício8() {
 
     return (
         <div className='pagina-ex8'>
-            <header>
-                <div>
-                    <img src="/assets/images/Frei-Logo.png" alt="" />
-                    <h1>React FreiS</h1>
-                </div>
-
-                <div>
-                    <Link to='/Home'>Inicio</Link>
-                    <Link to='/Sobre'>Sobre</Link>
-                </div>
-            </header>
+            <Nav/>
             <main>
                 <div className='title'>
                     <Link to='/Home'><img src="/assets/images/seta.png" /></Link>

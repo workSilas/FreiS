@@ -1,0 +1,21 @@
+.Titulo {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 80px;
+
+    .text {
+        display: flex;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .line {
+        width: 1280px;
+        height: 4px;
+    }
+    img {
+        width: 40px;
+    }
+}

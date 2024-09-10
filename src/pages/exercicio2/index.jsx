@@ -1,7 +1,7 @@
-import { click } from '@testing-library/user-event/dist/click';
 import './index.scss';
-import { Link } from 'react-router-dom'
 import { useState } from 'react'
+import Nav from '../../components/navegacao';
+import Titulo from '../../components/titulo';
 
 export default function Exercício2() {
 
@@ -9,31 +9,19 @@ export default function Exercício2() {
     const [Click, setClick] = useState(0)
 
     function clicking() {
-        let convert =  kg * 1000
+        let convert = kg * 1000
         setClick(convert)
         return setClick
     }
 
     return (
         <div className='pagina-ex2'>
-            <header>
-                <div>
-                    <img src="/assets/images/Frei-Logo.png" alt="" />
-                    <h1>React FreiS</h1>
-                </div>
-
-                <div>
-                    <Link to='/Home'>Inicio</Link>
-                    <Link to='/Sobre'>Sobre</Link>
-                </div>
-            </header>
-            <main>
-                <div className='title'>
-                    <Link to='/Home'><img src="/assets/images/seta.png" /></Link>
-                    <h2>Exercício 02 - Converter Kg/gramas</h2>
-                </div>
+            <Nav />
                 <div className='sep'>
-                    <div className='line'></div>
+                    <Titulo
+                        titulo="Exercício 02 - Converter Kg/gramas"
+                        color='#B3FF37'
+                    />
                     <div className='enunciado'>
                         <p>Implementar um programa em Javascript para <b>converter kilos em gramas.</b></p>
                     </div>
@@ -46,7 +34,6 @@ export default function Exercício2() {
                     </div>
                     <p>Resultado: O Resultado é {Click}g</p>
                 </div>
-            </main>
         </div>
     )
 }
