@@ -1,6 +1,7 @@
 import './index.scss';
-import Titulo from '../../components/titulo';
 import { useState } from 'react'
+import Titulo from '../../components/titulo';
+import Enunciado from '../../components/enunciado';
 import Nav from '../../components/navegacao';
 
 export default function Exercício12() {
@@ -24,9 +25,9 @@ export default function Exercício12() {
                     titulo="Exercício 12 - Comparador de pessoas"
                     color="#FFCE37"
                 />
-                <div className='enunciado'>
-                    <p>Implemente um programa em Javascript que leia <b>o nome, a idade, e o sexo de várias pessoas.</b></p>
-                </div>
+                <Enunciado
+                    text="Implemente um programa em Javascript que leia o nome, a idade, e o sexo de várias pessoas."
+                />
                 <div className='divisao'>
                     <div className='square'>
                         <div className='exercise'>

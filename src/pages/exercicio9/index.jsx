@@ -1,6 +1,7 @@
 import './index.scss';
-import Titulo from '../../components/titulo';
 import { useState } from 'react'
+import Titulo from '../../components/titulo';
+import Enunciado from '../../components/enunciado';
 import Nav from '../../components/navegacao';
 
 export default function Exercício9() {
@@ -34,9 +35,9 @@ export default function Exercício9() {
                     titulo="Exercício 09 - Sorveteria"
                     color="#D0D0D0"
                 />
-                <div className='enunciado'>
-                    <p>Implementar um programa em Javascript  que <b>calcule o total</b> a se pagar em uma compra na sorveteria, a partir do total de gramas comprado. O preço de <b>100g é R$3,50</b> mas se o total de gramasfor a partir de 1kg, o preço das 100g <b>diminui</b> 50 centavos. Se o total de gramasfor menor ou igual a zero, enviar a mensagem <b>"Peso inválido".</b></p>
-                </div>
+                <Enunciado
+                    text="Implementar um programa em Javascript  que calcule o total a se pagar em uma compra na sorveteria, a partir do total de gramas comprado. O preço de 100g é R$3,50 mas se o total de gramasfor a partir de 1kg, o preço das 100g diminui 50 centavos. Se o total de gramasfor menor ou igual a zero, enviar a mensagem 'Peso inválido'."
+                />
                 <div className='square'>
                     <div className='exercise'>
                         <h2>Valor em gramas</h2>

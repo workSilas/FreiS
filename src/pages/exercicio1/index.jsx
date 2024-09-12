@@ -2,6 +2,7 @@ import './index.scss';
 import { useState } from 'react'
 import Nav from '../../components/navegacao';
 import Titulo from '../../components/titulo';
+import Enunciado from '../../components/enunciado';
 
 export default function Exercício1() {
 
@@ -27,25 +28,25 @@ export default function Exercício1() {
     return (
         <div className='pagina-ex1'>
             <Nav />
-                <div className='sep'>
-                    <Titulo
-                        titulo="Exercício 01 - Cupom de desconto"
-                        color='#FFCE37'
-                    />
-                    <div className='enunciado'>
-                        <p>Implementar um programa em <b>Javascript</b> para calcular o valor final de uma compra a partir do valor da compra e do cupom de desconto. <b>O cupom diz quantos reais</b> terá de desconto.</p>
+            <div className='sep'>
+                <Titulo
+                    titulo="Exercício 01 - Cupom de desconto"
+                    color='#FFCE37'
+                />
+                <Enunciado
+                    text="Implementar um programa em Javascript para calcular o valor final de uma compra a partir do valor da compra e do cupom de desconto. O cupom diz quantos reais terá de desconto."
+                />
+                <div className='square'>
+                    <div className='exercise'>
+                        <h2>Informe o valor do pedido</h2>
+                        <input type="text" value={Valor} onChange={e => setValores(e.target.value)} />
+                        <h2>informe o valor do cupom</h2>
+                        <input type="text" value={Desconto} onChange={e => setDescontos(e.target.value)} />
                     </div>
-                    <div className='square'>
-                        <div className='exercise'>
-                            <h2>Informe o valor do pedido</h2>
-                            <input type="text" value={Valor} onChange={e => setValores(e.target.value)} />
-                            <h2>informe o valor do cupom</h2>
-                            <input type="text" value={Desconto} onChange={e => setDescontos(e.target.value)} />
-                        </div>
-                        <button onClick={clicking} >Executar</button>
-                    </div>
-                    <p>Resultado: O total é R${Click.toFixed(2)}</p>
-                </div>      
+                    <button onClick={clicking} >Executar</button>
+                </div>
+                <p>Resultado: O total é R${Click.toFixed(2)}</p>
+            </div>
         </div>
     )
 }

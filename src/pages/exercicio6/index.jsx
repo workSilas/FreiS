@@ -1,6 +1,7 @@
 import './index.scss';
-import Titulo from '../../components/titulo';
 import { useState } from 'react'
+import Titulo from '../../components/titulo';
+import Enunciado from '../../components/enunciado';
 import Nav from '../../components/navegacao';
 
 export default function Exercício6() {
@@ -25,9 +26,9 @@ export default function Exercício6() {
                     titulo="Exercício 06 - Salário líquido"
                     color="#FF5B37"
                 />
-                <div className='enunciado'>
-                    <p>Implementar um programa em Javascript para <b>calcular o salário líquido </b>de um funcionário, a partir de seu salário base, bônus mensal em porcentagem e do total de descontos em reais.</p>
-                </div>
+                <Enunciado
+                    text="Implementar um programa em Javascript para calcular o salário líquido de um funcionário, a partir de seu salário base, bônus mensal em porcentagem e do total de descontos em reais."
+                />
                 <div className='square'>
                     <div className='exercise'>
                         <div className='divisao'>

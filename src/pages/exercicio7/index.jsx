@@ -1,6 +1,7 @@
 import './index.scss';
-import Titulo from '../../components/titulo';
 import { useState } from 'react'
+import Titulo from '../../components/titulo';
+import Enunciado from '../../components/enunciado';
 import Nav from '../../components/navegacao';
 
 export default function Exercício7() {
@@ -45,10 +46,9 @@ export default function Exercício7() {
                     titulo="Exercício 07 - Cores primárias"
                     color="#37FFAB"
                 />
-                <div className='line'></div>
-                <div className='enunciado'>
-                    <p>Implementar um programa em Javascript <b>verificar</b> se duas cores são primarias.</p>
-                </div>
+                <Enunciado
+                    text="Implementar um programa em Javascript verificar se duas cores são primarias."
+                />
                 <div className='square'>
                     <div className='exercise'>
                         <h2>Primeira cor</h2>

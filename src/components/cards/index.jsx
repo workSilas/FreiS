@@ -14,3 +14,10 @@ export default function Cards(props) {
         </div>
     )
 }   
+
+/*
+    color=""
+    title=""
+    link=""
+    exercicio=""
+*/

@@ -1,5 +1,6 @@
 import './index.scss';
 import Titulo from '../../components/titulo';
+import Enunciado from '../../components/enunciado';
 import { useState } from 'react'
 import Nav from '../../components/navegacao';
 
@@ -24,9 +25,9 @@ export default function Exercício4() {
                     titulo="Exercício 04 - Leitura de livro"
                     color="#37B7FF"
                 />
-                <div className='enunciado'>
-                    <p>Implementar um programa em Javascript que <b>calcule</b> o tempo que um livro será lido por uma pessoa a partir do nome do livro, do total de páginas e do t empo em segundos de leitura por página.</p>
-                </div>
+                <Enunciado
+                    text="Implementar um programa em Javascript que calcule o tempo que um livro será lido por uma pessoa a partir do nome do livro, do total de páginas e do t empo em segundos de leitura por página."
+                />
                 <div className='square'>
                     <div className='exercise'>
                         <div className='divisao'>

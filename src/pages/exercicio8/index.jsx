@@ -1,6 +1,7 @@
 import './index.scss';
-import Titulo from '../../components/titulo';
 import { useState } from 'react'
+import Titulo from '../../components/titulo';
+import Enunciado from '../../components/enunciado';
 import Nav from '../../components/navegacao';
 
 export default function Exercício8() {
@@ -40,10 +41,9 @@ export default function Exercício8() {
                     titulo="Exercício 08 - Temperatura"
                     color="#151515"
                 />
-                <div className='line'></div>
-                <div className='enunciado'>
-                    <p>Implementar um programa em Javascript a partir da temperatura, <b>avalie a situação</b> da pessoa conforme a tabela ao lado. Ao final, apresente a classificação.</p>
-                </div>
+                <Enunciado
+                    text="Implementar um programa em Javascript a partir da temperatura, avalie a situação da pessoa conforme a tabela ao lado. Ao final, apresente a classificação."
+                />
                 <div className='square'>
                     <div className='exercise'>
                         <h2>Sua temperatura</h2>

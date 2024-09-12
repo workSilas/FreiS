@@ -1,6 +1,7 @@
 import './index.scss';
-import Titulo from '../../components/titulo';
 import { useState } from 'react'
+import Titulo from '../../components/titulo';
+import Enunciado from '../../components/enunciado';
 import Nav from '../../components/navegacao';
 
 export default function Exercício5() {
@@ -36,9 +37,9 @@ export default function Exercício5() {
                     titulo="Exercício 05 - Média de notas"
                     color="#CB37FF"
                 />
-                <div className='enunciado'>
-                    <p>Implementar um programa em Javascript para <b>verificar </b>se um aluno passou ou não, baseado em 3 notas, considerando que a média mínima para passar é 6.</p>
-                </div>
+                <Enunciado
+                    text="Implementar um programa em Javascript para verificar se um aluno passou ou não, baseado em 3 notas, considerando que a média mínima para passar é 6."
+                />
                 <div className='square'>
                     <div className='exercise'>
                         <div className='divisao'>

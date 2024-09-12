@@ -1,6 +1,7 @@
 import './index.scss';
-import Titulo from '../../components/titulo';
 import { useState } from 'react'
+import Titulo from '../../components/titulo';
+import Enunciado from '../../components/enunciado';
 import Nav from '../../components/navegacao';
 
 export default function Exercício10() {
@@ -54,9 +55,9 @@ export default function Exercício10() {
                     titulo="Exercício 10 - Calculo de IMC com histórico"
                     color="#B75333"
                 />
-                <div className='enunciado'>
-                    <p>Implemente um programa em Javascript que a partir da altura e do peso de uma pessoa, <b>caclcule o IMC</b> e avalie a faixa correspondente.</p>
-                </div>
+                <Enunciado
+                    text="Implemente um programa em Javascript que a partir da altura e do peso de uma pessoa, caclcule o IMC e avalie a faixa correspondente"
+                />
                 <div className='divisao'>
                     <div className='square'>
                         <div className='exercise'>

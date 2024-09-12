@@ -1,0 +1,27 @@
+.circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+}
+
+.square {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 15px 0px;
+    background-color: #fff;
+    width: 215px;
+    height: 158px;
+    border-radius: 12px;
+}
+
+.square h3 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.9rem;
+}
+.square p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.9rem;
+}

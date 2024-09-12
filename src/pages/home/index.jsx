@@ -1,119 +1,88 @@
 import Nav from '../../components/navegacao';
 import './index.scss';
 import { Link } from 'react-router-dom'
+import Cards from '../../components/cards';
 
 export default function Home() {
     return (
         <div className='pagina-home'>
-            <Nav/>
+            <Nav />
             <main>
                 <h2>Escolha um treino...</h2>
-                <div className='fileiras'>
-                    <div className='corner'>
-                        <div className='square'>
-                            <div className='circle' id='laranja'>
+                <div className='corner'>
+                    <Cards
+                        color="#FFCE37"
+                        title="Cupom de desconto"
+                        link="/Exercicio1"
+                        exercicio="Exercício 01"
+                    />
+                    <Cards
+                        color="#B3FF37"
+                        title="Converter Kg/gramas"
+                        link="/Exercicio2"
+                        exercicio="Exercício 02"
+                    />
 
-                            </div>
-                            <h3>Cupom de desconto</h3>
-                            <Link to='/Exercicio1'>Exercício 01</Link>
-                        </div>
-                        <div className='square'>
-                            <div className='circle' id='verde'>
-
-                            </div>
-                            <h3>Converter Kg/gramas</h3>
-                            <Link to='/Exercicio2'>Exercício 02</Link>
-                        </div>
-                        <div className='square'>
-                            <div className='circle' id='azul'>
-
-                            </div>
-                            <h3>Valor total por quantidade</h3>
-                            <Link to='/Exercicio3'>Exercício 03</Link>
-                        </div>
-                        <div className='square'>
-                            <div className='circle' id='vermelho'>
-
-                            </div>
-                            <h3>Tempo por Páginas</h3>
-                            <Link to='/Exercicio4'>Exercício 04</Link>
-                        </div>
-                        <div className='square'>
-                            <div className='circle' id='amarelo'>
-
-                            </div>
-                            <h3>Passou ou Não</h3>
-                            <Link to='/Exercicio5'>Exercício 05</Link>
-                        </div>
-                    </div>
-                </div>
-                <hr />
-                <div className='fileiras'>
-                    <div className="corner">
-                        <div className='square'>
-                            <div className='circle' id='rosa'>
-
-                            </div>
-                            <h3>Salário</h3>
-                            <Link to='/Exercicio6'>Exercício 06</Link>
-                        </div>
-                        <div className='square'>
-                            <div className='circle' id='marrom'>
-
-                            </div>
-                            <h3>Cores</h3>
-                            <Link to='/Exercicio7'>Exercício 07</Link>
-                        </div>
-                        <div className='square'>
-                            <div className='circle' id='preto'>
-
-                            </div>
-                            <h3>Temperatura</h3>
-                            <Link to='/Exercicio8'>Exercício 08</Link>
-                        </div>
-                        <div className='square'>
-                            <div className='circle' id='roxo'>
-
-                            </div>
-                            <h3>Sorveteria</h3>
-                            <Link to='/Exercicio9'>Exercício 09</Link>
-                        </div>
-                        <div className='square'>
-                            <div className='circle' id='branco'>
-
-                            </div>
-                            <h3>IMC</h3>
-                            <Link to='/Exercicio10'>Exercício 10</Link>
-                        </div>
-                    </div>
-                </div>
-                <hr />
-                <div className='fileiras'>
-                    <div className="corner">
-                        <div className='square'>
-                            <div className='circle' id='cinza'>
-
-                            </div>
-                            <h3>Tabuada</h3>
-                            <Link to='/Exercicio11'>Exercício 11</Link>
-                        </div>
-                        <div className="corner">
-                        <div className='square'>
-                            <div className='circle' id='vermelho'>
-
-                            </div>
-                            <h3>Comparador de pessoas</h3>
-                            <Link to='/Exercicio12'>Exercício 12</Link>
-                        </div>
-                    </div>
-                    </div>
-
-                </div>
-                <hr />
-                <div className='fileiras'>
-                    <div className="corner">
-
-                    </div>
+                    <Cards
+                        color="#37FFF3"
+                        title="Valor total por quantidade"
+                        link="/Exercicio3"
+                        exercicio="Exercício 03"
+                    />
+                    <Cards
+                        color="#37B7FF"
+                        title="Leitura de livro"
+                        link="/Exercicio4"
+                        exercicio="Exercício 04"
+                    />
+                    <Cards
+                        color="#CB37FF"
+                        title="Média de notas"
+                        link="/Exercicio5"
+                        exercicio="Exercício 05"
+                    />
+                    <Cards
+                        color="#FF5B37"
+                        title="Salário líquido"
+                        link="/Exercicio6"
+                        exercicio="Exercício 06"
+                    />
+                    <Cards
+                        color="#37FFAB"
+                        title="Cores primárias"
+                        link="/Exercicio7"
+                        exercicio="Exercício 07"
+                    />
+                    <Cards
+                        color="#151515"
+                        title="Temperatura"
+                        link="/Exercicio8"
+                        exercicio="Exercício 08"
+                    />
+                    <Cards
+                        color="#D0D0D0"
+                        title="Sorveteria"
+                        link="/Exercicio9"
+                        exercicio="Exercício 09"
+                    />
+                    <Cards
+                        color="#B75333"
+                        title="Calculo de IMC com histórico"
+                        link="/Exercicio10"
+                        exercicio="Exercício 10"
+                    />
+                    <Cards
+                        color="#6533B7"
+                        title="Tabuada"
+                        link="/Exercicio11"
+                        exercicio="Exercício 11"
+                    />
+                    <Cards
+                        color="#FFCE37"
+                        title="Comparador de pessoas"
+                        link="/Exercicio12"
+                        exercicio="Exercício 12"
+                    />
                 </div>
             </main>
         </div>
