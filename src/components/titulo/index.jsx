@@ -8,7 +8,7 @@ export default function Titulo(props) {
                 <Link to='/Home'><img src="/assets/images/seta.png" /></Link>
                 <h2>{props.titulo}</h2>
             </div>
-            <div className='line' style={{backgroundColor: props.color}}></div>
+            <div className='line' style={{ backgroundColor: props.color }}></div>
         </div>
     )
 }

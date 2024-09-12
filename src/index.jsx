@@ -6,9 +6,6 @@ import Estrutura from './route.jsx'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Estrutura/>
+    <Estrutura />
   </React.StrictMode>
 );
-
-
- 

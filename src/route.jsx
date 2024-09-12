@@ -16,23 +16,23 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 export default function Estrutura() {
     return (
-    <BrowserRouter>
-        <Routes> 
-            <Route path='/Home' element={<Home/>}/>
-            <Route path='/Sobre' element={<Sobre/>}/>
-            <Route path='/Exercicio1' element={<Exercício1/>}/>
-            <Route path='/Exercicio2' element={<Exercício2/>}/>
-            <Route path='/Exercicio3' element={<Exercício3/>}/>
-            <Route path='/Exercicio4' element={<Exercício4/>}/>
-            <Route path='/Exercicio5' element={<Exercício5/>}/>
-            <Route path='/Exercicio6' element={<Exercício6/>}/>
-            <Route path='/Exercicio7' element={<Exercício7/>}/>
-            <Route path='/Exercicio8' element={<Exercício8/>}/>
-            <Route path='/Exercicio9' element={<Exercício9/>}/>
-            <Route path='/Exercicio10' element={<Exercício10/>}/>
-            <Route path='/Exercicio11' element={<Exercício11/>}/>
-            <Route path='/Exercicio12' element={<Exercício12/>}/>
-        </Routes> 
-    </BrowserRouter>
+        <BrowserRouter>
+            <Routes>
+                <Route path='/Home' element={<Home />} />
+                <Route path='/Sobre' element={<Sobre />} />
+                <Route path='/Exercicio1' element={<Exercício1 />} />
+                <Route path='/Exercicio2' element={<Exercício2 />} />
+                <Route path='/Exercicio3' element={<Exercício3 />} />
+                <Route path='/Exercicio4' element={<Exercício4 />} />
+                <Route path='/Exercicio5' element={<Exercício5 />} />
+                <Route path='/Exercicio6' element={<Exercício6 />} />
+                <Route path='/Exercicio7' element={<Exercício7 />} />
+                <Route path='/Exercicio8' element={<Exercício8 />} />
+                <Route path='/Exercicio9' element={<Exercício9 />} />
+                <Route path='/Exercicio10' element={<Exercício10 />} />
+                <Route path='/Exercicio11' element={<Exercício11 />} />
+                <Route path='/Exercicio12' element={<Exercício12 />} />
+            </Routes>
+        </BrowserRouter>
     )
 } 
