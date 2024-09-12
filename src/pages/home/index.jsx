@@ -22,7 +22,6 @@ export default function Home() {
                         link="/Exercicio2"
                         exercicio="Exercício 02"
                     />
-
                     <Cards
                         color="#37FFF3"
                         title="Valor total por quantidade"
