@@ -1,5 +1,5 @@
 import './index.scss';
-import { Link } from 'react-router-dom'
+import Titulo from '../../components/titulo';
 import { useState } from 'react'
 import Nav from '../../components/navegacao';
 
@@ -48,39 +48,36 @@ export default function Exercício10() {
 
     return (
         <div className='pagina-ex10'>
-            <Nav/>
-            <main>
-                <div className='title'>
-                    <Link to='/Home'><img src="/assets/images/seta.png" /></Link>
-                    <h2>Exercício 10 - IMC</h2>
+            <Nav />
+            <div className='sep'>
+                <Titulo
+                    titulo="Exercício 10 - Calculo de IMC com histórico"
+                    color="#B75333"
+                />
+                <div className='enunciado'>
+                    <p>Implemente um programa em Javascript que a partir da altura e do peso de uma pessoa, <b>caclcule o IMC</b> e avalie a faixa correspondente.</p>
                 </div>
-                <div className='sep'>
-                    <div className='line'></div>
-                    <div className='enunciado'>
-                        <p>Implemente um programa em Javascript que a partir da altura e do peso de uma pessoa, <b>caclcule o IMC</b> e avalie a faixa correspondente.</p>
+                <div className='divisao'>
+                    <div className='square'>
+                        <div className='exercise'>
+                            <h2>Altura</h2>
+                            <input type="text" value={altura} onChange={e => setAltura(e.target.value)} />
+                            <h2> Peso</h2>
+                            <input type="text" value={peso} onChange={e => setPeso(e.target.value)} />
+                        </div>
+                        <button onClick={clicking} >Executar</button>
                     </div>
-                    <div className='divisao'>
-                        <div className='square'>
-                            <div className='exercise'>
-                                <h2>Altura</h2>
-                                <input type="text" value={altura} onChange={e => setAltura(e.target.value)} />
-                                <h2> Peso</h2>
-                                <input type="text" value={peso} onChange={e => setPeso(e.target.value)} />
-                            </div>
-                            <button onClick={clicking} >Executar</button>
-                        </div>
-                        <div className='historico'>
-                            <ul>
-                                {array.map(item =>
-                                    <li>
-                                        {item}
-                                    </li>
-                                )}
-                            </ul>
-                        </div>
+                    <div className='historico'>
+                        <ul>
+                            {array.map(item =>
+                                <li>
+                                    {item}
+                                </li>
+                            )}
+                        </ul>
                     </div>
                 </div>
-            </main>
+            </div>
         </div>
     )
 }

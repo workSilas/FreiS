@@ -1,6 +1,5 @@
-import { click } from '@testing-library/user-event/dist/click';
 import './index.scss';
-import { Link } from 'react-router-dom'
+import Titulo from '../../components/titulo';
 import { useState } from 'react'
 import Nav from '../../components/navegacao';
 
@@ -24,18 +23,16 @@ export default function Exercício11() {
 
     return (
         <div className='pagina-ex11'>
-            <Nav/>
-            <main>
-                <div className='title'>
-                    <Link to='/Home'><img src="/assets/images/seta.png" /></Link>
-                    <h2>Exercício 11 - Tabuada</h2>
+            <Nav />
+            <div className='sep'>
+                <Titulo
+                    titulo="Exercício 11 - Tabuada"
+                    color="#6533B7"
+                />
+                <div className='enunciado'>
+                    <p>Implementar um programa em Javascript que <b>escreva no terminal</b> a tabuada de um número informado pelo usuário. A mensagem deve estaar no formato "A x B = X".</p>
                 </div>
-                <div className='sep'>
-                    <div className='line'></div>
-                    <div className='enunciado'>
-                        <p>Implementar um programa em Javascript que <b>escreva no terminal</b> a tabuada de um número informado pelo usuário. A mensagem deve estaar no formato "A x B = X".</p>
-                    </div>
-                    <div className='divisao'>
+                <div className='divisao'>
                     <div className='square'>
                         <div className='exercise'>
                             <h2>Número</h2>
@@ -52,9 +49,8 @@ export default function Exercício11() {
                             )}
                         </ul>
                     </div>
-                    </div>
                 </div>
-            </main>
+            </div>
         </div>
     )
 }

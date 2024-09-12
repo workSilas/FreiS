@@ -1,5 +1,5 @@
 import './index.scss';
-import { Link } from 'react-router-dom'
+import Titulo from '../../components/titulo';
 import { useState } from 'react'
 import Nav from '../../components/navegacao';
 
@@ -13,24 +13,24 @@ export default function Exercício7() {
         let a = ''
         let b = ''
         let c = ''
-        if(cor1 == 'azul' || cor1 =='amarelo' || cor1 == 'vermelho'){
+        if (cor1 == 'azul' || cor1 == 'amarelo' || cor1 == 'vermelho') {
             a = 'true'
         }
-        else{
+        else {
             a = 'false'
         }
 
-        if(cor2 == 'azul' || cor2 =='amarelo' || cor2 == 'vermelho'){
+        if (cor2 == 'azul' || cor2 == 'amarelo' || cor2 == 'vermelho') {
             b = 'true'
         }
-        else{
+        else {
             b = 'false'
         }
 
-        if(a == 'true' && b == 'true'){
+        if (a == 'true' && b == 'true') {
             c = 'true'
         }
-        else{
+        else {
             c = 'false'
         }
         setClick(c)
@@ -39,29 +39,27 @@ export default function Exercício7() {
 
     return (
         <div className='pagina-ex7'>
-            <Nav/>
-            <main>
-                <div className='title'>
-                    <Link to='/Home'><img src="/assets/images/seta.png" /></Link>
-                    <h2>Exercício 07 - Cores</h2>
+            <Nav />
+            <div className='sep'>
+                <Titulo
+                    titulo="Exercício 07 - Cores primárias"
+                    color="#37FFAB"
+                />
+                <div className='line'></div>
+                <div className='enunciado'>
+                    <p>Implementar um programa em Javascript <b>verificar</b> se duas cores são primarias.</p>
                 </div>
-                <div className='sep'>
-                    <div className='line'></div>
-                    <div className='enunciado'>
-                        <p>Implementar um programa em Javascript <b>verificar</b> se duas cores são primarias.</p>
+                <div className='square'>
+                    <div className='exercise'>
+                        <h2>Primeira cor</h2>
+                        <input type="text" value={cor1} onChange={e => setCor1(e.target.value)} />
+                        <h2>Segunda cor</h2>
+                        <input type="text" value={cor2} onChange={e => setCor2(e.target.value)} />
                     </div>
-                    <div className='square'>
-                        <div className='exercise'>
-                            <h2>Primeira cor</h2>
-                            <input type="text" value={cor1} onChange={e => setCor1(e.target.value)} />
-                            <h2>Segunda cor</h2>
-                            <input type="text" value={cor2} onChange={e => setCor2(e.target.value)} />
-                        </div>
-                        <button onClick={clicking} >Executar</button>
-                    </div>
-                    <p>As duas cores são primaria? {Click}</p>
+                    <button onClick={clicking} >Executar</button>
                 </div>
-            </main>
+                <p>As duas cores são primaria? {Click}</p>
+            </div>
         </div>
     )
 }
